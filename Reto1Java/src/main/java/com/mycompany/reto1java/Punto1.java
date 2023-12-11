@@ -4,6 +4,8 @@
  */
 package com.mycompany.reto1java;
 
+import java.util.Scanner;
+
 /**
  *
  * @author user
@@ -14,7 +16,24 @@ public class Punto1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingrese un número positivo: ");
+        int n = sc.nextInt();
+        
+        int contador = 0;
+        
+        for (int i = 1; i < n; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+            } else {
+                if (i % 3 == 0 || i % 5 == 0) {
+                contador += i;
+                }
+            }
+            
+        }
+        System.out.println("la suma es igual a: " + contador);
+        
     }
     
 }
